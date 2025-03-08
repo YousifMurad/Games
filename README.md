@@ -1,2 +1,2 @@
-# Games
-space jet game with cup head theme
+# Cup Head game
+'Space Jet' game in cup head theme
