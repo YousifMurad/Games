@@ -16,7 +16,7 @@ class Scoreboard:
         self.stats = game.stats
         self.setting = game.setting
 
-        self.text_color = (30, 30, 30)
+        self.text_color = (255, 255, 255)
         self.font = pygame.font.SysFont(None, 46)
 
         # Load the highest score
@@ -46,9 +46,9 @@ class Scoreboard:
         self.gold_str = str(self.stats.score/4)
         self.score_str = str(self.stats.score)
         self.current_score_str = f"Score: {self.score_str}"
-        text_color = (255, 255, 255)
-        self.current_score_image = self.font.render(self.current_score_str, True, text_color)
-        self.gold_image = self.font.render(self.gold_str, True, text_color)
+        # text_color = (255, 255, 255)
+        self.current_score_image = self.font.render(self.current_score_str, True, self.text_color)
+        self.gold_image = self.font.render(self.gold_str, True, self.text_color)
         
         # Display the gold at the top right of the screen
         self.gold_rect = self.gold_image.get_rect()

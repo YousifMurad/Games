@@ -53,7 +53,7 @@ class SpaceJet:
         self.screen.blit(self.setting.background, (0, 0))
         self.screen.blit(self.setting.fields_background, (0, 0))
         self.screen.blit(self.setting.level_text, (5, 5))
-        self.screen.blit(self.setting.coin, (self.setting.screen_width-209, 7))
+        self.screen.blit(self.setting.coin, (self.setting.screen_width-209, 3))
         self.ship.blitme()
         x = 10
         y = 55
